@@ -125,18 +125,10 @@ int main() {
         if (!isGameOver && !waitingForRematch) {
             // Normal gameplay phase
             char move = 'N';
-            if (playerID == 1) {
-                if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-                    move = 'U';
-                else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-                    move = 'D';
-            }
-            else {
-                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-                    move = 'U';
-                else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-                    move = 'D';
-            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) || sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+                move = 'U';
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) || sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+                move = 'D';
 
             socket.send(&move, sizeof(move));
 
