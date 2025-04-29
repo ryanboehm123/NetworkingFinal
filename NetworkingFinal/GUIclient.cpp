@@ -3,7 +3,6 @@
 #include <iostream>
 
 // Game settings
-const char* SERVER_IP = "127.0.0.1";
 const unsigned short SERVER_PORT = 53000;
 const int WINDOW_WIDTH = 800;
 const int WINDOW_HEIGHT = 600;
@@ -13,7 +12,10 @@ const int BALL_SIZE = 10;
 
 int main() {
     sf::TcpSocket socket;
-    if (socket.connect(SERVER_IP, SERVER_PORT) != sf::Socket::Done) {
+    std::string serverIP;
+    std::cout << "Enter server IP address: ";
+    std::getline(std::cin, serverIP);
+    if (socket.connect(sf::IpAddress(serverIP), SERVER_PORT) != sf::Socket::Done) {
         std::cerr << "Failed to connect to server.\n";
         return -1;
     }

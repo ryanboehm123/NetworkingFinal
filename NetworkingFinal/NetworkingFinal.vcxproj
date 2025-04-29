@@ -102,12 +102,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Client|x64'">
-    <IncludePath>C:\Users\ryanb\OneDrive\Documents\Networking for Online Games\NetworkingFinal\NetworkingFinal\NetworkingFinalProject\SFML-2.6.1\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\ryanb\OneDrive\Documents\Networking for Online Games\NetworkingFinal\NetworkingFinal\NetworkingFinalProject\SFML-2.6.1\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\ryanb\OneDrive\Documents\Networking for Online Games\NetworkingFinal\SFML-2.6.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\ryanb\OneDrive\Documents\Networking for Online Games\NetworkingFinal\SFML-2.6.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='server|x64'">
-    <IncludePath>C:\Users\ryanb\OneDrive\Documents\Networking for Online Games\NetworkingFinal\NetworkingFinal\NetworkingFinalProject\SFML-2.6.1\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\ryanb\OneDrive\Documents\Networking for Online Games\NetworkingFinal\NetworkingFinal\NetworkingFinalProject\SFML-2.6.1\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\ryanb\OneDrive\Documents\Networking for Online Games\NetworkingFinal\SFML-2.6.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\ryanb\OneDrive\Documents\Networking for Online Games\NetworkingFinal\SFML-2.6.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>C:\Users\ryanb\OneDrive\Desktop\NetworkingFinalProject\NetworkingFinalProject\SFML-2.6.1\include;$(IncludePath)</IncludePath>

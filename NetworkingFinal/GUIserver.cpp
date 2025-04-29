@@ -1,6 +1,7 @@
 #include <SFML/Network.hpp>
 #include <iostream>
 #include <fstream>
+#include <string>
 
 // Game settings
 const unsigned short PORT = 53000;
@@ -45,6 +46,9 @@ int main() {
         logFile << "[Server] Failed to start listener.\n"; logFile.flush();
         return -1;
     }
+
+    sf::IpAddress localIP = sf::IpAddress::getLocalAddress();
+    std::cout << "Server Local IP Address: " << localIP.toString() << std::endl;
 
     sf::TcpSocket client1, client2;
     listener.accept(client1);
